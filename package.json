@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://jahangir842.github.io/jahangir-site",
+  "homepage": "https://jahangir842.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
