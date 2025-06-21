@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       <div className="container-custom py-12">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold mb-2">Jahangir Alam</h2>
+            <h2 className="text-2xl font-bold mb-2">Jahangir</h2>
             <p className="text-slate-400 max-w-md">
               DevOps Engineer specializing in Linux system administration, cloud platforms, 
               and infrastructure automation.
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <p className="text-slate-400 text-sm">
-            &copy; {currentYear} Jahangir Alam. All rights reserved.
+            &copy; {currentYear} Jahangir. All rights reserved.
           </p>
         </div>
       </div>
