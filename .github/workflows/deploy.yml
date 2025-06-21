@@ -17,6 +17,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+
+
+
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -28,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3.9.1
         with:
           node-version: '18'
           cache: 'npm'
@@ -41,10 +44,15 @@ jobs:
         run: npm run build
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
+<<<<<<< HEAD
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+=======
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+>>>>>>> e6f119f3dc57b8acb8a999a6cdda05b28021c328
         with:
           path: './dist'
       - name: Deploy to GitHub Pages
