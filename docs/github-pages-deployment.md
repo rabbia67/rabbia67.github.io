@@ -164,8 +164,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -184,23 +187,22 @@ jobs:
         run: npm run build
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: './dist'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
 ```
+
+This workflow:
+- Runs whenever you push to the main or master branch
+- Builds your project directly from the main branch
+- Deploys the built files to GitHub Pages
+- No separate branch is needed - everything happens from your main branch
 
 #### 3. Push to GitHub
 
