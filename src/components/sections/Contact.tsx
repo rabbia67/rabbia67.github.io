@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
             subject: formData.subject || `New message from ${formData.from_name}`,
             message: formData.message,
             reply_to: formData.from_email,
-            to_name: 'Jahangir Alam'  // Updated recipient name
+            to_name: 'Jahangir'  // Updated recipient name
           },
           'rfvOvo36rN7dcTIzj'
         );

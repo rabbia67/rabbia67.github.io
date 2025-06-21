@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
               Hello, I'm
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Jahangir Alam
+              Jahangir
             </h1>
             <h2 className="text-2xl md:text-3xl text-slate-300 font-medium mb-6">
               DevOps Engineer & <span className="gradient-text">Cloud Specialist</span>
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
               <a 
                 href="/resume.pdf"
                 className="flex items-center gap-2 px-7 py-3 font-medium text-white bg-slate-700 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-800 active:scale-105 transition"
-                download="Jahangir-Alam-Resume.pdf"
+                download="Jahangir-Resume.pdf"
               >
                 <Download size={18} />
                 Download Resume
