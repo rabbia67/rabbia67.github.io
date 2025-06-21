@@ -69,6 +69,17 @@ yarn preview
 
 This project can be deployed to various platforms:
 
+### GitHub Pages
+1. Update the `homepage` field in `package.json` with your GitHub username:
+   ```json
+   "homepage": "https://yourusername.github.io/abad-naseer-portfolio"
+   ```
+2. Deploy to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+3. Your site will be available at `https://yourusername.github.io/abad-naseer-portfolio`
+
 ### Vercel or Netlify
 The easiest option is to connect your GitHub repository to Vercel or Netlify for automatic deployments.
 
