@@ -1,6 +1,6 @@
-# Abad Naseer - Portfolio Website
+# Jahangir - Portfolio Website
 
-A modern, responsive portfolio website for Abad Naseer, a DevOps Engineer & Cloud Solutions Architect. Built with React, TypeScript, Vite, and Tailwind CSS.
+A modern, responsive portfolio website for Jahangir, a DevOps Engineer & Cloud Solutions Architect. Built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Features
 
@@ -20,8 +20,8 @@ A modern, responsive portfolio website for Abad Naseer, a DevOps Engineer & Clou
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/abad-naseer-portfolio.git
-   cd abad-naseer-portfolio
+   git clone https://github.com/yourusername/jahangir-portfolio.git
+   cd jahangir-portfolio
    ```
 
 2. Install dependencies:
@@ -70,15 +70,30 @@ yarn preview
 This project can be deployed to various platforms:
 
 ### GitHub Pages
+You can deploy this project to GitHub Pages in two ways:
+
+#### Option 1: Manual Deployment
 1. Update the `homepage` field in `package.json` with your GitHub username:
    ```json
-   "homepage": "https://yourusername.github.io/abad-naseer-portfolio"
+   "homepage": "https://jahangir842.github.io/portfolio"
    ```
 2. Deploy to GitHub Pages:
    ```bash
    npm run deploy
    ```
-3. Your site will be available at `https://yourusername.github.io/abad-naseer-portfolio`
+3. Your site will be available at `https://jahangir842.github.io/portfolio`
+
+#### Option 2: GitHub Actions (Recommended)
+This repository includes a GitHub Actions workflow for automatic deployment:
+
+1. Push your code to GitHub
+2. Enable GitHub Pages in your repository settings:
+   - Go to Settings > Pages
+   - Set "Source" to "GitHub Actions"
+3. GitHub Actions will automatically build and deploy your site when you push to the main branch
+4. Your site will be available at your GitHub Pages URL
+
+For more details, see [docs/github-pages-deployment.md](docs/github-pages-deployment.md)
 
 ### Vercel or Netlify
 The easiest option is to connect your GitHub repository to Vercel or Netlify for automatic deployments.
