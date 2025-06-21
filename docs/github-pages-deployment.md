@@ -144,11 +144,14 @@ First, ensure GitHub Pages is enabled in your repository:
 Create a file at `.github/workflows/deploy.yml` with the following content:
 
 ```yaml
-name: Deploy to GitHub Pages
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [ main ]
+    branches: ["main"]
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -158,57 +161,66 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3.9.1
-        with:
-          node-version: '18'
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm ci
-      - name: Update Vite config for GitHub Pages
-        run: |
-          sed -i 's/base: '\''\.\/'\''*/base: '\''\.\/'\''/' vite.config.ts
-      - name: Build
-        run: npm run build
-      - name: Create .nojekyll file
-        run: touch dist/.nojekyll
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3.0.1
-        with:
-          path: './dist'
-
+  # Single deploy job since we're just deploying
   deploy:
-    name: Deploy
-    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # Setup Node.js for building the React/Vite app
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      # Install dependencies
+      - name: Install dependencies
+        run: npm ci
+      
+      # Update Vite config to use relative paths
+      - name: Update Vite config for GitHub Pages
+        run: |
+          sed -i 's/base: '\''\.\/'\''*/base: '\''\.\/'\''/' vite.config.ts
+      
+      # Build the app
+      - name: Build
+        run: npm run build
+      
+      # Create .nojekyll file to prevent Jekyll processing
+      - name: Create .nojekyll file
+        run: touch dist/.nojekyll
+      
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload only the dist directory which contains the built app
+          path: './dist'
+      
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
 ```
 
 This workflow:
 - Runs whenever you push to the main branch
-- Has two separate jobs: build and deploy
-- The build job checks out the code, sets up Node.js, builds the project, and uploads the artifact
-- The deploy job depends on the build job and handles the actual deployment to GitHub Pages
+- Uses a single job that handles both building and deploying
+- Builds your React/Vite app and deploys it to GitHub Pages
+- Uses the latest GitHub Actions for Pages deployment
 - No separate branch is needed - everything happens from your main branch
 
 #### 3. Push to GitHub
