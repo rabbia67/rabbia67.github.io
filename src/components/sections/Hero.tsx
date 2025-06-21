@@ -6,11 +6,15 @@ import TerminalEffect from '../ui/TerminalEffect';
 
 const Hero: React.FC = () => {
   const commands = [
-    'cd jahangir-portfolio',
-    'npm install',
-    'npm run build',
-    'npm start',
-    'Deployment successful! Welcome to my portfolio...'
+    'kubectl get pods -n production | grep -i error',
+    'docker-compose -f stack.yml up -d --scale api=3',
+    'aws eks update-kubeconfig --region us-west-2 --name prod-cluster',
+    'helm upgrade --install prometheus prometheus-community/prometheus',
+    'terraform apply -var-file=prod.tfvars -auto-approve',
+    'git commit -am "fix: resolve memory leak in API service" && git push',
+    'ansible-playbook -i inventory/prod deploy.yml --tags="security,monitoring"',
+    'k9s -n monitoring',
+    'Systems operational. All services green. Welcome to my portfolio...'
   ];
 
   return (
