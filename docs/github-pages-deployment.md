@@ -148,7 +148,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -164,17 +164,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3.9.1
         with:
           node-version: '18'
           cache: 'npm'
@@ -187,21 +184,31 @@ jobs:
         run: npm run build
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: './dist'
+
+  deploy:
+    name: Deploy
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
 ```
 
 This workflow:
-- Runs whenever you push to the main or master branch
-- Builds your project directly from the main branch
-- Deploys the built files to GitHub Pages
+- Runs whenever you push to the main branch
+- Has two separate jobs: build and deploy
+- The build job checks out the code, sets up Node.js, builds the project, and uploads the artifact
+- The deploy job depends on the build job and handles the actual deployment to GitHub Pages
 - No separate branch is needed - everything happens from your main branch
 
 #### 3. Push to GitHub
@@ -222,7 +229,7 @@ git push
 
 #### Advantages of GitHub Actions Deployment
 
-- **Automation**: Deploys automatically on push to main/master branch
+- **Automation**: Deploys automatically on push to main branch
 - **Consistency**: Builds in a clean environment every time
 - **Visibility**: Build logs and history available in GitHub
 - **No Local Setup**: No need to run deployment commands locally
