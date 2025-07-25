@@ -1,4 +1,4 @@
-# Jahangir - Portfolio Website
+# Rabbia Waheed - Portfolio Website
 
 A modern, responsive portfolio website for Jahangir, a DevOps Engineer & Cloud Solutions Architect. Built with React, TypeScript, Vite, and Tailwind CSS.
 
