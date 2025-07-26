@@ -118,4 +118,4 @@ If you encounter issues with GitHub Pages deployment, see [docs/github-pages-dep
 
 ## License
 
-This project is open source and available under the MIT License. 
+Designed & Developed by [Jahangir](https://github.com/jahangir842) - DevOps Engineer & Cloud Specialist
