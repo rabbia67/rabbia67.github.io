@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Clock, Users, TrendingDown } from 'lucide-react';
+import { Award, Clock, Users } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import MetricCard from '../ui/MetricCard';
 
@@ -7,27 +7,27 @@ const Achievements: React.FC = () => {
   const metrics = [
     {
       icon: <Award size={24} />,
-      value: 100,
-      suffix: '%',
-      label: 'CI/CD Pipeline Success Rate'
-    },
-    {
-      icon: <TrendingDown size={24} />,
-      value: 40,
-      suffix: '%',
-      label: 'Cost Reduction in Cloud Migrations'
-    },
-    {
-      icon: <Clock size={24} />,
-      value: 99.9,
-      suffix: '%',
-      label: 'Uptime SLA Maintenance'
+      value: 2,
+      suffix: '',
+      label: 'Best Employee Awards'
     },
     {
       icon: <Users size={24} />,
       value: 10,
-      suffix: 'K+',
-      label: 'Users Served Across Production Systems'
+      suffix: '+',
+      label: 'Leadership Positions'
+    },
+    {
+      icon: <Clock size={24} />,
+      value: 5,
+      suffix: '+',
+      label: 'Certifications Completed'
+    },
+    {
+      icon: <Award size={24} />,
+      value: 15,
+      suffix: '+',
+      label: 'Projects Completed'
     }
   ];
 
@@ -36,7 +36,7 @@ const Achievements: React.FC = () => {
       <div className="container-custom">
         <SectionTitle 
           title="Key Achievements"
-          subtitle="Measurable results and impact from my DevOps implementations."
+          subtitle="Recognition and accomplishments throughout my academic and professional journey."
         />
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -60,10 +60,10 @@ const Achievements: React.FC = () => {
                 <span className="font-bold">1</span>
               </div>
               <div>
-                <h4 className="text-lg font-bold mb-2">Infrastructure Cost Optimization</h4>
+                <h4 className="text-lg font-bold mb-2">Early Warning System Development</h4>
                 <p className="text-slate-400">
-                  Implemented resource optimization strategies across AWS services, reducing monthly 
-                  infrastructure costs by 40% while maintaining performance and reliability standards.
+                  Developed a real-time early warning system using rule-based logic and AI modules, 
+                  integrating TimescaleDB for efficient time-series data handling.
                 </p>
               </div>
             </div>
@@ -73,10 +73,10 @@ const Achievements: React.FC = () => {
                 <span className="font-bold">2</span>
               </div>
               <div>
-                <h4 className="text-lg font-bold mb-2">High-Performance MLOps Pipeline</h4>
+                <h4 className="text-lg font-bold mb-2">PCB Design Excellence</h4>
                 <p className="text-slate-400">
-                  Designed and implemented an end-to-end MLOps pipeline that reduced model training 
-                  and deployment time by 70%, enabling faster iteration cycles for data scientists.
+                  Recognized as Best Employee at Pakistan Detector Technologies for excellence in PCB design, 
+                  optimization, and documentation of complex circuit boards.
                 </p>
               </div>
             </div>
@@ -86,10 +86,10 @@ const Achievements: React.FC = () => {
                 <span className="font-bold">3</span>
               </div>
               <div>
-                <h4 className="text-lg font-bold mb-2">Zero-Downtime Deployment Strategy</h4>
+                <h4 className="text-lg font-bold mb-2">Robotics & AI Innovation</h4>
                 <p className="text-slate-400">
-                  Architected and implemented a zero-downtime deployment strategy for critical 
-                  production applications, achieving 99.9% uptime and eliminating service interruptions.
+                  Implemented advanced navigation algorithms for robotics, including Bug algorithms, 
+                  Potential Field methods, and RRT with Kalman Filtering for trajectory optimization.
                 </p>
               </div>
             </div>
@@ -99,10 +99,10 @@ const Achievements: React.FC = () => {
                 <span className="font-bold">4</span>
               </div>
               <div>
-                <h4 className="text-lg font-bold mb-2">Security Compliance Automation</h4>
+                <h4 className="text-lg font-bold mb-2">Leadership & Community Impact</h4>
                 <p className="text-slate-400">
-                  Developed automated security scanning and compliance checking tools, reducing 
-                  security audit preparation time by 60% and ensuring continuous compliance.
+                  Founded Rafsan e Subh Foundation and served as General Secretary at IEEE IST, 
+                  demonstrating strong leadership and community engagement abilities.
                 </p>
               </div>
             </div>
