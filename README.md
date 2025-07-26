@@ -1,6 +1,8 @@
 # Rabbia Waheed - Portfolio Website
 
-A modern, responsive portfolio website for Jahangir, a DevOps Engineer & Cloud Solutions Architect. Built with React, TypeScript, Vite, and Tailwind CSS.
+A modern, responsive portfolio website for Rabbia Waheed, a Frontend Developer & Web Designer. Built with React, TypeScript, Vite, and Tailwind CSS.
+
+Designed & Developed by [Jahangir](https://github.com/jahangir842) - DevOps Engineer & Cloud Specialist
 
 ## Features
 
@@ -13,7 +15,7 @@ A modern, responsive portfolio website for Jahangir, a DevOps Engineer & Cloud S
 
 ## Live Demo
 
-Visit the live portfolio at [https://jahangir842.github.io](https://jahangir842.github.io)
+Visit the live portfolio at [https://rabbia67.github.io](https://rabbia67.github.io)
 
 ## Prerequisites
 
@@ -24,8 +26,8 @@ Visit the live portfolio at [https://jahangir842.github.io](https://jahangir842.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jahangir842/jahangir842.github.io.git
-   cd jahangir842.github.io
+   git clone https://github.com/rabbia67/rabbia67.github.io.git
+   cd rabbia67.github.io
    ```
 
 2. Install dependencies:

@@ -12,29 +12,29 @@ const Skills: React.FC = () => {
   });
 
   const technicalSkills = [
-    { label: 'Linux System Administration', percentage: 95 },
-    { label: 'Cloud Platforms (AWS, Azure, GCP)', percentage: 90 },
-    { label: 'CI/CD Pipelines', percentage: 90 },
-    { label: 'Infrastructure as Code', percentage: 85 },
-    { label: 'Virtualization', percentage: 90 },
-    { label: 'MLOps & LLM Deployment', percentage: 85 },
+    { label: 'Python & C++', percentage: 95 },
+    { label: 'Machine Learning & Deep Learning', percentage: 90 },
+    { label: 'Computer Vision & OpenCV', percentage: 90 },
+    { label: 'GIS & QGIS Development', percentage: 85 },
+    { label: 'ROS & Robotics', percentage: 85 },
+    { label: 'SQL & TimescaleDB', percentage: 85 },
   ];
 
   const tools = [
-    { label: 'Docker', percentage: 90 },
-    { label: 'Terraform', percentage: 85 },
-    { label: 'Ansible', percentage: 90 },
-    { label: 'GitHub Actions', percentage: 90 },
-    { label: 'Azure DevOps', percentage: 85 },
-    { label: 'Prometheus/Grafana', percentage: 80 },
+    { label: 'TensorFlow & PyTorch', percentage: 90 },
+    { label: 'Scikit-learn & NumPy', percentage: 90 },
+    { label: 'Git & GitHub', percentage: 85 },
+    { label: 'PCB Design Tools', percentage: 85 },
+    { label: 'Power BI & Tableau', percentage: 80 },
+    { label: 'Qt Framework & PyQt', percentage: 85 },
   ];
 
   const terminalCommands = [
-    'ansible-playbook deploy.yml -i inventory',
-    'terraform apply -auto-approve',
-    'docker run --gpus all -d llama-cpp',
-    'az vm list --output table',
-    'git push origin main'
+    'python train_model.py --model cnn',
+    'rosrun robot_nav path_planning',
+    'pytest test_algorithms.py',
+    'python process_timeseries.py',
+    'qgis --python process_data.py'
   ];
 
   return (
@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
       <div className="container-custom">
         <SectionTitle 
           title="Technical Skills"
-          subtitle="A comprehensive overview of my technical expertise and proficiency levels."
+          subtitle="Frontend development expertise and tools I use to create engaging web experiences."
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

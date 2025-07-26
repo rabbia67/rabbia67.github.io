@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/layout/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
@@ -8,11 +8,9 @@ import Projects from './components/sections/Projects';
 import Achievements from './components/sections/Achievements';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
-import { X } from 'lucide-react';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [showBanner, setShowBanner] = useState(true);
 
   useEffect(() => {
     // Simulate page loading
@@ -39,23 +37,6 @@ function App() {
 
   return (
     <>
-      {showBanner && (
-        <div className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white py-2 px-4 text-center relative">
-          <p className="text-sm">
-            Looking for DevOps & Cloud expertise? Contact me at{' '}
-            <a href="mailto:jahangir80842@gmail.com" className="underline font-medium">
-              jahangir80842@gmail.com
-            </a>
-          </p>
-          <button 
-            onClick={() => setShowBanner(false)} 
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white/80 hover:text-white"
-            aria-label="Close banner"
-          >
-            <X size={16} />
-          </button>
-        </div>
-      )}
       <Navbar />
       <main>
         <Hero />

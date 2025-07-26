@@ -5,30 +5,32 @@ import ProjectCard from '../ui/ProjectCard';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'Local LLM Deployment Platform',
-      description: 'Deployed GPU-accelerated local LLM infrastructure using LLaMA.cpp, NVIDIA CUDA, and OpenWebUI for efficient on-premises AI capabilities.',
-      techStack: ['NVIDIA CUDA', 'LLaMA.cpp', 'OpenWebUI', 'Docker', 'Python', 'Linux'],
+      title: 'Robot Navigation and Path Planning',
+      description: 'Implemented multiple navigation algorithms including Bug 1, Bug 2, Tangent Bug, and custom algorithms for robot navigation. Developed advanced path planning using Potential Field methods and RRT with Kalman Filtering.',
+      techStack: ['Python', 'ROS', 'Kalman Filter', 'Path Planning', 'Robot Kinematics', 'C++'],
       year: '2024',
-      githubUrl: 'https://github.com/jahangir842/llm-deployment'
+      githubUrl: 'https://github.com/rabbia67/robot-navigation'
     },
     {
-      title: 'Multi-Cloud Infrastructure as Code',
-      description: 'Developed comprehensive IaC templates for AWS and Azure using Terraform and Ansible for consistent, version-controlled infrastructure deployment.',
-      techStack: ['Terraform', 'Ansible', 'AWS', 'Azure', 'GitHub Actions', 'Bash'],
+      title: 'Early Warning System',
+      description: 'Developed a real-time early warning system integrating AI modules with GIS visualization. Implemented time-series data handling using PostgreSQL and TimescaleDB.',
+      techStack: ['Python', 'PostgreSQL', 'TimescaleDB', 'QGIS', 'AI', 'GIS'],
       year: '2023',
-      githubUrl: 'https://github.com/jahangir842/multi-cloud-iac'
+      githubUrl: 'https://github.com/rabbia67/early-warning-system'
     },
     {
-      title: 'MLOps Pipeline for AI Research',
-      description: 'Built end-to-end MLOps workflow with MLflow for model tracking, experiment management, and automated deployment of machine learning models.',
-      techStack: ['MLflow', 'Python', 'Docker', 'GitHub Actions', 'GPU Acceleration', 'Prometheus'],
-      year: '2023'
+      title: 'EgyptianGen',
+      description: 'Created an innovative text-to-image generator that produces historic-style images of ancient Egypt from descriptive prompts, utilizing deep learning and computer vision techniques.',
+      techStack: ['PyTorch', 'TensorFlow', 'Computer Vision', 'Deep Learning', 'NLP', 'Image Generation'],
+      year: '2023',
+      githubUrl: 'https://github.com/rabbia67/egyptiangen'
     },
     {
-      title: 'High-Performance Computing Cluster',
-      description: 'Configured and maintained Apache Spark cluster for high-performance computing with optimized resource allocation and monitoring.',
-      techStack: ['Apache Spark', 'Linux', 'Grafana', 'Ansible', 'Bash', 'HDFS'],
-      year: '2022'
+      title: 'Gesture-Based Volume Control',
+      description: 'Developed a real-time hand gesture recognition system using computer vision to control laptop volume, demonstrating practical applications of AI in human-computer interaction.',
+      techStack: ['OpenCV', 'Python', 'Machine Learning', 'Computer Vision', 'Real-time Processing', 'Image Recognition'],
+      year: '2023',
+      githubUrl: 'https://github.com/rabbia67/gesture-control'
     }
   ];
 
