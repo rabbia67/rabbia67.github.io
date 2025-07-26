@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "feat/jahangir",
+    "main",
+    "origin",
+    "rabbia",
+    "rabbia67-patch-1",
+    "rabbia67-patch-2"
+  ],
+  "parent": {
+    "feat/jahangir": "main",
+    "main": null,
+    "origin": "main",
+    "rabbia": "main",
+    "rabbia67-patch-1": "main",
+    "rabbia67-patch-2": "main"
+  },
+  "order": [
+    "main",
+    "feat/jahangir",
+    "origin",
+    "rabbia",
+    "rabbia67-patch-1",
+    "rabbia67-patch-2"
+  ]
+}
