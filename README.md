@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website for Rabbia Waheed, a Frontend Developer & Web Designer. Built with React, TypeScript, Vite, and Tailwind CSS.
 
-Designed & Developed by [Jahangir](https://github.com/jahangir842) - DevOps Engineer & Cloud Specialist
+Designed & Developed by [Jahangir](https://www.linkedin.com/in/jahangir-a-45886428a/) - DevOps Engineer & Cloud Specialist
 
 ## Features
 
