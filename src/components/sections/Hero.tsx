@@ -6,15 +6,15 @@ import TerminalEffect from '../ui/TerminalEffect';
 
 const Hero: React.FC = () => {
   const commands = [
-    'kubectl get pods -n production | grep -i error',
-    'docker-compose -f stack.yml up -d --scale api=3',
-    'aws eks update-kubeconfig --region us-west-2 --name prod-cluster',
-    'helm upgrade --install prometheus prometheus-community/prometheus',
-    'terraform apply -var-file=prod.tfvars -auto-approve',
-    'git commit -am "fix: resolve memory leak in API service" && git push',
-    'ansible-playbook -i inventory/prod deploy.yml --tags="security,monitoring"',
-    'k9s -n monitoring',
-    'Systems operational. All services green. Welcome to my portfolio...'
+    'python -m pip install tensorflow torch scikit-learn opencv-python',
+    'python train_model.py --dataset path/to/data --epochs 100',
+    'git checkout -b feature/pose-estimation',
+    'roslaunch robot_navigation path_planning.launch',
+    'python process_timeseries.py --db timescaledb://localhost:5432',
+    'qgis --python process_gis_data.py',
+    'git commit -m "feat: implement kalman filter for trajectory correction"',
+    'python test_model.py --weights path/to/best_model.pth',
+    'Model training complete. Systems operational. Welcome to my portfolio...'
   ];
 
   return (
@@ -39,14 +39,15 @@ const Hero: React.FC = () => {
               Hello, I'm
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Jahangir
+              Rabbia Waheed
             </h1>
             <h2 className="text-2xl md:text-3xl text-slate-300 font-medium mb-6">
-              DevOps Engineer & <span className="gradient-text">Cloud Specialist</span>
+              AI Developer & <span className="gradient-text">Electrical Engineer</span>
             </h2>
             <p className="text-slate-400 text-lg mb-8 max-w-lg">
-              Specializing in Linux system administration, cloud platforms, and MLOps pipelines. 
-              I build resilient and scalable infrastructure with a focus on automation and efficiency.
+              A highly skilled Electrical Engineer turned AI Developer with expertise in machine learning, 
+              deep learning, and innovative technical solutions. Specializing in intelligent algorithms, 
+              GIS applications, and robotics development.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -64,7 +65,7 @@ const Hero: React.FC = () => {
               <a 
                 href="/resume.pdf"
                 className="flex items-center gap-2 px-7 py-3 font-medium text-white bg-slate-700 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-slate-800 active:scale-105 transition"
-                download="Jahangir-Resume.pdf"
+                download="Rabbia-Waheed-Resume.pdf"
               >
                 <Download size={18} />
                 Download Resume

@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
             subject: formData.subject || `New message from ${formData.from_name}`,
             message: formData.message,
             reply_to: formData.from_email,
-            to_name: 'Jahangir'  // Updated recipient name
+            to_name: 'Rabbia'  // Updated recipient name
           },
           'rfvOvo36rN7dcTIzj'
         );
@@ -127,26 +127,26 @@ const Contact: React.FC = () => {
     {
       icon: <Phone size={20} />,
       title: 'Phone',
-      value: '(+92) 323-8878681',
-      link: 'tel:+923238878681',
+      value: '(+92) 319-6251725',
+      link: 'tel:+923196251725',
     },
     {
       icon: <Mail size={20} />,
       title: 'Email',
-      value: 'jahangir80842@gmail.com',
-      link: 'mailto:jahangir80842@gmail.com',
+      value: 'rabbiawaheed3952@gmail.com',
+      link: 'mailto:rabbiawaheed3952@gmail.com',
     },
     {
       icon: <Github size={20} />,
       title: 'GitHub',
-      value: 'github.com/jahangir842',
-      link: 'https://github.com/jahangir842',
+      value: 'github.com/rabbia67',
+      link: 'https://github.com/rabbia67',
     },
     {
       icon: <Linkedin size={20} />,
       title: 'LinkedIn',
-      value: 'linkedin.com/in/jahangir-a-45886428a',
-      link: 'https://linkedin.com/in/jahangir-a-45886428a',
+      value: 'linkedin.com/in/rabbia-waheed-02b96921a',
+      link: 'https://linkedin.com/in/rabbia-waheed-02b96921a',
     },
     {
       icon: <MapPin size={20} />,
@@ -160,7 +160,7 @@ const Contact: React.FC = () => {
       <div className="container-custom">
         <SectionTitle 
           title="Get In Touch"
-          subtitle="Have a project in mind or want to discuss potential opportunities? Let's connect."
+          subtitle="Looking for a frontend developer or have a project idea? I'd love to hear from you."
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">

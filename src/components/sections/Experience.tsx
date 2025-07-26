@@ -5,41 +5,41 @@ import TimelineItem from '../ui/TimelineItem';
 const Experience: React.FC = () => {
   const experiences = [
     {
-      position: 'DevOps Engineer',
-      company: 'National Science & Technology Park',
-      period: 'Mar 2023 - Present',
+      title: 'AI Developer',
+      company: 'Center of Artificial Intelligence and Computing, NASTP',
+      period: 'July 2023 - Present',
       description: [
-        'Designed and maintained secure cloud infrastructure across Azure and AWS',
-        'Automated CI/CD pipelines with Azure DevOps and GitHub Actions',
-        'Managed infrastructure as code using Terraform and Ansible',
-        'Deployed and optimized machine learning/LLM workflows in GPU environments',
-        'Integrated MLflow for model tracking and end-to-end MLOps support',
-        'Focused on automation, configuration management, and cloud-native practices'
+        'Developed real-time early warning system using rule-based logic and AI modules',
+        'Designed and implemented PostgreSQL database with TimescaleDB for time-series data',
+        'Built GIS-based application interface for visualizing alerts and real-time data overlays',
+        'Collaborated on full-cycle development from data ingestion to deployment',
+        'Integrated AI modules with existing systems for enhanced functionality',
+        'Implemented robust testing and validation procedures for AI systems'
       ]
     },
     {
-      position: 'System Administrator',
-      company: 'National Science & Technology Park',
-      period: 'Nov 2021 - Mar 2023',
+      title: 'PCB Design Engineer',
+      company: 'Pakistan Detector Technologies Pvt. Ltd',
+      period: 'August 2022 - July 2023',
       description: [
-        'Managed Linux and Windows server infrastructure for 500+ users',
-        'Implemented virtualization solutions using VMware ESXi and Hyper-V',
-        'Configured and maintained networking services (DHCP, DNS, Active Directory)',
-        'Deployed and managed web servers (Apache, Nginx, Litespeed)',
-        'Implemented security measures and handled system backups',
-        'Provided technical support and troubleshooting for IT infrastructure'
+        'Designed and developed optimized PCB layouts for performance and manufacturability',
+        'Conducted design reviews and implemented revisions based on feedback',
+        'Generated comprehensive documentation for PCB fabrication and assembly',
+        'Performed detailed routing and layout using industry-standard EDA tools',
+        'Analyzed and resolved design-related issues during development',
+        'Supported functional testing and troubleshooting of PCBs'
       ]
     },
     {
-      position: 'IT Support Specialist',
-      company: 'Freelance',
-      period: 'Jan 2020 - Oct 2021',
+      title: 'Sales Coordinator',
+      company: 'Zeests.com',
+      period: 'Oct 2021 - July 2022',
       description: [
-        'Provided technical support and IT solutions for various clients',
-        'Set up and configured small business networks and systems',
-        'Performed hardware and software troubleshooting',
-        'Implemented basic security measures and data backup solutions',
-        'Assisted with website hosting and management'
+        'Analyzed customer shopping data to identify potential leads',
+        'Managed website and social media accounts for product visibility',
+        'Responded to customer inquiries and resolved product issues',
+        'Wrote product descriptions for Shopify-based storefront',
+        'Collected feedback and prepared feasibility reports'
       ]
     }
   ];

@@ -14,33 +14,33 @@ const About: React.FC = () => {
   const expertise = [
     {
       icon: <Cloud size={24} />,
-      title: 'Cloud & Infrastructure',
-      description: 'AWS, Azure, GCP, Linux, Windows Server, VMware ESXi, Hyper-V'
+      title: 'Frontend Development',
+      description: 'HTML5, CSS3, JavaScript, TypeScript, React.js, Next.js'
     },
     {
       icon: <Server size={24} />,
-      title: 'Containerization',
-      description: 'Docker, Singularity, Virtualization, System Administration'
+      title: 'UI/UX Design',
+      description: 'Figma, Adobe XD, Responsive Design, User Experience, Wireframing'
     },
     {
       icon: <GitBranch size={24} />,
-      title: 'CI/CD & MLOps',
-      description: 'Azure DevOps, GitHub Actions, GitLab CI/CD, MLflow, LLM Deployment'
+      title: 'Version Control',
+      description: 'Git, GitHub, GitLab, Collaborative Development'
     },
     {
       icon: <LineChart size={24} />,
-      title: 'Monitoring & Security',
-      description: 'Prometheus, Grafana, ELK Stack, SSL/TLS, McAfee, Kaspersky'
+      title: 'Web Performance',
+      description: 'Performance Optimization, SEO, Web Vitals, Analytics'
     },
     {
       icon: <Database size={24} />,
-      title: 'Automation & IaC',
-      description: 'Ansible, Terraform, Configuration Management, Scripting (Python, Bash)'
+      title: 'State Management',
+      description: 'Redux, Context API, React Query, Local Storage'
     },
     {
       icon: <Shield size={24} />,
-      title: 'Web & Network',
-      description: 'Apache, Nginx, Litespeed, TCP/IP, DNS, Load Balancing, DHCP'
+      title: 'Modern Tools',
+      description: 'Tailwind CSS, Material-UI, Styled Components, Modern Web APIs'
     }
   ];
 
@@ -49,7 +49,7 @@ const About: React.FC = () => {
       <div className="container-custom">
         <SectionTitle 
           title="About Me"
-          subtitle="DevOps Engineer specializing in Linux system administration, cloud platforms, and infrastructure automation."
+          subtitle="Frontend Developer passionate about creating beautiful and intuitive web experiences"
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -62,18 +62,19 @@ const About: React.FC = () => {
           >
             <div className="space-y-4 text-slate-300">
               <p>
-                As a DevOps Engineer with solid expertise in Linux system administration, Windows Server, VMware ESXi, and cloud platforms 
-                such as Azure and AWS, I bring comprehensive skills to streamline operations and maintain infrastructure.
+                As an Electrical Engineer turned AI Developer, I bring a unique blend of hardware and software expertise 
+                to complex technical challenges. With a strong foundation in machine learning, deep learning, and robotics, 
+                I develop innovative solutions that push the boundaries of artificial intelligence.
               </p>
               <p>
-                I'm proficient in automating CI/CD pipelines using GitHub Actions and Azure DevOps, with a strong emphasis on infrastructure 
-                as code, system reliability, and cloud scalability. My experience includes supporting AI/ML workflows, including model 
-                deployment, monitoring, and GPU-accelerated environments.
+                My expertise spans across implementing intelligent algorithms, developing GIS applications, and creating 
+                real-time early warning systems. I'm proficient in multiple programming languages including Python, C++, 
+                and working with frameworks like TensorFlow, PyTorch, and ROS for robotics development.
               </p>
               <p>
-                Currently based in Rawalpindi, Pakistan, I'm focused on streamlining operations while maintaining performance, security, 
-                and efficiency across infrastructure. My goal is to leverage cutting-edge technologies to solve complex problems and 
-                improve system reliability.
+                Currently based in Islamabad, Pakistan, I combine my electrical engineering background with cutting-edge AI 
+                technologies to create impactful solutions. My experience includes PCB design, robotics simulation, and 
+                developing AI-powered applications for real-world challenges.
               </p>
               
               <div className="pt-4">

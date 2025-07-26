@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           className="flex items-center gap-2 cursor-pointer"
         >
           <Server className="text-primary-500" size={24} />
-          <span className="font-bold text-xl">Jahangir</span>
+          <span className="font-bold text-xl">Rabbia Waheed</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -69,10 +69,7 @@ const Navbar: React.FC = () => {
           <a 
             href="/resume.pdf" 
             className="btn-primary flex items-center gap-2"
-            download="Jahangir-Resume.pdf"
-            onClick={(e) => {
-              // Remove the preventDefault and alert, letting the natural download happen
-            }}
+            download="rabbia-resume.pdf"
           >
             <Download size={18} />
             Resume
@@ -108,7 +105,7 @@ const Navbar: React.FC = () => {
                 onClick={closeMenu}
               >
                 <Server className="text-primary-500" size={24} />
-                <span className="font-bold text-xl">Jahangir</span>
+                <span className="font-bold text-xl">Rabbia</span>
               </Link>
             </div>
           </div>
@@ -134,7 +131,7 @@ const Navbar: React.FC = () => {
                 <a 
                   href="/resume.pdf" 
                   className="btn-primary inline-flex items-center gap-2"
-                  download="Jahangir-Resume.pdf"
+                  download="rabbia-resume.pdf"
                   onClick={closeMenu}
                 >
                   <Download size={18} />

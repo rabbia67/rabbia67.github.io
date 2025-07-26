@@ -12,28 +12,28 @@ const Skills: React.FC = () => {
   });
 
   const technicalSkills = [
-    { label: 'Linux System Administration', percentage: 95 },
-    { label: 'Cloud Platforms (AWS, Azure, GCP)', percentage: 90 },
-    { label: 'CI/CD Pipelines', percentage: 90 },
-    { label: 'Infrastructure as Code', percentage: 85 },
-    { label: 'Virtualization', percentage: 90 },
-    { label: 'MLOps & LLM Deployment', percentage: 85 },
+    { label: 'Python & C++', percentage: 95 },
+    { label: 'Machine Learning & Deep Learning', percentage: 90 },
+    { label: 'SQL & TimescaleDB', percentage: 90 },
+    { label: 'GIS & QGIS Development', percentage: 90 },
+    { label: 'ROS & Robotics', percentage: 85 },
+    { label: 'PCB & Circuit Design', percentage: 85 },
   ];
 
   const tools = [
-    { label: 'Docker', percentage: 90 },
-    { label: 'Terraform', percentage: 85 },
-    { label: 'Ansible', percentage: 90 },
-    { label: 'GitHub Actions', percentage: 90 },
-    { label: 'Azure DevOps', percentage: 85 },
-    { label: 'Prometheus/Grafana', percentage: 80 },
+    { label: 'PyTorch & TensorFlow', percentage: 90 },
+    { label: 'OpenCV & Computer Vision', percentage: 90 },
+    { label: 'Qt Framework & PyQt', percentage: 85 },
+    { label: 'Proteus & Altium Designer', percentage: 85 },
+    { label: 'Power BI & Tableau', percentage: 85 },
+    { label: 'Git & GitHub', percentage: 85 },
   ];
 
   const terminalCommands = [
-    'ansible-playbook deploy.yml -i inventory',
-    'terraform apply -auto-approve',
-    'docker run --gpus all -d llama-cpp',
-    'az vm list --output table',
+    'python train_model.py --model cnn',
+    'rosrun robot_nav path_planning',
+    'python process_timeseries.py',
+    'qgis --python process_data.py',
     'git push origin main'
   ];
 
@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
       <div className="container-custom">
         <SectionTitle 
           title="Technical Skills"
-          subtitle="A comprehensive overview of my technical expertise and proficiency levels."
+          subtitle="Frontend development expertise and tools I use to create engaging web experiences."
         />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -92,35 +92,35 @@ const Skills: React.FC = () => {
                 <ul className="space-y-3 text-slate-300">
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Linux & Windows Server Administration</span>
+                    <span>Data Processing & Analysis</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Cloud Infrastructure Design & Implementation</span>
+                    <span>Real-Time Systems Development</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Containerization & Virtualization</span>
+                    <span>Robotics & Path Planning</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Automated CI/CD Pipeline Configuration</span>
+                    <span>3D Simulation & Unreal Engine</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Infrastructure as Code (IaC) Implementation</span>
+                    <span>Algorithm Design & Optimization</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Monitoring, Logging & Alerting Systems</span>
+                    <span>Documentation & Technical Writing</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>LLM Deployment with GPU Acceleration</span>
+                    <span>Research & Development</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-primary-500 mr-2">•</span>
-                    <span>Security Implementation & Compliance</span>
+                    <span>Project Management</span>
                   </li>
                 </ul>
               </div>
