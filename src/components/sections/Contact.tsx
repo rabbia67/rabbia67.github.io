@@ -133,8 +133,8 @@ const Contact: React.FC = () => {
     {
       icon: <Mail size={20} />,
       title: 'Email',
-      value: 'rabbiawaheed3952@gmail.com',
-      link: 'mailto:rabbiawaheed3952@gmail.com',
+      value: 'rabbiawaheed395@gmail.com',
+      link: 'mailto:rabbiawaheed395@gmail.com',
     },
     {
       icon: <Github size={20} />,
